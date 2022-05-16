@@ -157,9 +157,9 @@ def solvePuzzle(initialState):
     result = generalSearch(manhattanDistance, initialState)
     stop = time.perf_counter()
     if(result[1]==-1):
-        print("A* search with manhattan depth heuristic failed!\n")
+        print("A* search with manhattan distance heuristic failed!\n")
         exit()
-    print(f"A* search with manhattan depth heuristic took {stop-start:0.3f}s of time and explored {result[0]} nodes with depth {result[1]}")
+    print(f"A* search with manhattan distance heuristic took {stop-start:0.3f}s of time and explored {result[0]} nodes with depth {result[1]}")
 
 def menu():
     print("Please input 1 to execute your own test case or 2 to execute a pre-selected set of test cases. \n")
